@@ -22,7 +22,7 @@ exports.getProductById = (req, res, next, id) => {
 exports.createProduct = (req, res) => {
   //
   let form = new formidable.IncomingForm();
- 
+
   form.keepExtensions = true;
 
   form.parse(req, (err, fields, file) => {
