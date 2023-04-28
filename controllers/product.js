@@ -46,7 +46,7 @@ exports.createProduct = (req, res) => {
     //handle file here.
 
     if (file.photo) {
-      if (file.photo.size > 100000) {
+      if (file.photo.size > 500000) {
         return res.status(400).json({
           msg: "Image size is too big.",
         });
@@ -105,7 +105,7 @@ exports.updateProduct = (req, res) => {
 
     //handle file here.
     if (file.photo) {
-      if (file.photo.size > 3000000) {
+      if (file.photo.size > 500000) {
         return res.status(400).json({
           msg: "Image size is too big.",
         });
