@@ -14,7 +14,6 @@ const orderRoutes = require("./routes/order");
 const stripeRoutes = require("./routes/stripepayment");
 
 // My DB connections.
-mongoose.set("strictQuery", false);
 mongoose.connect(process.env.DATABASE).then(() => {
   console.log("DB CONNECTED");
 });
