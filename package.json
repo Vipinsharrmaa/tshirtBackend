@@ -6,9 +6,6 @@
   "scripts": {
     "start": "node app.js"
   },
-   "engines": {
-    "node": ">=14 <15"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
